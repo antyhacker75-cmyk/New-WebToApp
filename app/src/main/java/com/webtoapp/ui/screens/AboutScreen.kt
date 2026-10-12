@@ -679,8 +679,8 @@ private fun ContactGrid() {
             ContactEntry(
                 icon = Icons.Outlined.MenuBook,
                 label = docsLabel,
-                value = "shiaho777.github.io",
-                action = ContactAction.OpenUrl("https://shiaho777.github.io/web-to-app/")
+                value = "renz2451.github.io",
+                action = ContactAction.OpenUrl("https://renz2451.github.io/web-to-app/")
             ),
             ContactEntry(
                 icon = Icons.Outlined.Send,
@@ -690,31 +690,31 @@ private fun ContactGrid() {
             ),
             ContactEntry(
                 icon = Icons.Outlined.Tag,
-                label = "X (Twitter)",
-                value = "@shiaho777",
-                action = ContactAction.OpenUrl("https://x.com/shiaho777")
+                label = "Facebook",
+                value = "AstroStar Renz",
+                action = ContactAction.OpenUrl("https://www.facebook.com/profile.php?id=61593252647752")
             ),
             ContactEntry(
                 icon = Icons.Outlined.PlayCircleOutline,
-                label = "Bilibili",
-                value = "b23.tv/8mGDo2N",
-                action = ContactAction.OpenUrl("https://b23.tv/8mGDo2N")
+                label = "Youtubev",
+                value = "@r3nz75",
+                action = ContactAction.OpenUrl("https://youtube.com/@r3nz75")
             ),
             ContactEntry(
                 icon = Icons.Outlined.Groups,
-                label = "QQ $groupWord",
-                value = "1041130206",
+                label = "Discord $groupWord",
+                value = "https://discord.gg/EQxHDJ6aC",
                 action = ContactAction.CopyText(
-                    label = "QQ Group",
-                    text = "1041130206",
+                    label = "Discord Group",
+                    text = "https://discord.gg/EQxHDJ6aC",
                     toast = qqCopied
                 )
             ),
             ContactEntry(
                 icon = Icons.Outlined.Forum,
                 label = authorLabel,
-                value = "shiaho",
-                action = ContactAction.OpenUrl("https://github.com/shiaho777")
+                value = "renz2451",
+                action = ContactAction.OpenUrl("https://github.com/renz2451")
             )
         )
     }
@@ -724,7 +724,7 @@ private fun ContactGrid() {
         headerStyle = WtaSectionHeaderStyle.Quiet
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(WtaSpacing.CardGap)) {
-            GitHubRepoCard(onClick = { context.openUrl("https://github.com/shiaho777/web-to-app") })
+            GitHubRepoCard(onClick = { context.openUrl("https://github.com/renz2451/web-to-app") })
             entries.chunked(2).forEach { pair ->
                 Row(horizontalArrangement = Arrangement.spacedBy(WtaSpacing.CardGap)) {
                     pair.forEach { entry ->
@@ -809,7 +809,7 @@ private fun GitHubRepoCard(onClick: () -> Unit) {
                 verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
                 Text(
-                    text = "shiaho777 / web-to-app",
+                    text = "renz2451 / web-to-app",
                     style = MaterialTheme.typography.titleSmall,
                     color = MaterialTheme.colorScheme.onSurface,
                     maxLines = 1,
@@ -817,7 +817,7 @@ private fun GitHubRepoCard(onClick: () -> Unit) {
                 )
                 AnimatedVisibility(visible = LocalShowDescriptions.current) {
                     Text(
-                        text = "github.com/shiaho777/web-to-app",
+                        text = "github.com/renz2451/web-to-app",
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         fontFamily = FontFamily.Monospace,
@@ -1894,7 +1894,7 @@ private fun OtherProjectsSection() {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clip(RoundedCornerShape(WtaRadius.Control))
-                            .clickable { context.openUrl("https://github.com/shiaho777?tab=repositories") }
+                            .clickable { context.openUrl("https://github.com/renz2451?tab=repositories") }
                             .padding(vertical = 6.dp),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically
