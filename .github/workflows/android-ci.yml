@@ -57,6 +57,7 @@ jobs:
             -Dkotlin.compiler.execution.strategy=in-process \
             -PskipShellTemplateSync=true \
             -PallowDebugSignedRelease=true \
+            -PallowDebugSignedRelease=true \
             :app:compileStandardDebugKotlin \
             :shell:compileDebugKotlin \
             :app:testStandardDebugUnitTest \
@@ -114,6 +115,7 @@ jobs:
         run: |
           ./gradlew --no-daemon --no-configuration-cache \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             :app:testStandardDebugUnitTest --tests "com.webtoapp.core.apkbuilder.DemoApkExportTest"
 
       - name: Upload generated demo APK
