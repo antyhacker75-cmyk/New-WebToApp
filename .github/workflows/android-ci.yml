@@ -106,11 +106,13 @@ jobs:
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleStandardDebug
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleStandardRelease
@@ -123,11 +125,13 @@ jobs:
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
             -PallowDebugSignedRelease=true \
+            -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleGplayRelease
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             :shell:assembleDebug
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
@@ -140,6 +144,7 @@ jobs:
         run: |
           ./gradlew --no-daemon --no-configuration-cache \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             -PallowDebugSignedRelease=true \
             :app:testStandardDebugUnitTest --tests "com.webtoapp.core.apkbuilder.DemoApkExportTest"
 
