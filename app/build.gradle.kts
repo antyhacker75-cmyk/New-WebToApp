@@ -88,7 +88,7 @@ android {
             // Google Play variant. Only Play's applicationId requirement differs
             // (`com.webtoapp` is registered on Google Play by another party); behavior,
             // targetSdk and every build rule are shared with the standard flavor.
-            applicationId = "shiaho.webtoapp"
+            applicationId = "renz.webtoapp"
         }
     }
 
