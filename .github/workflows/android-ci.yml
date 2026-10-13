@@ -113,18 +113,17 @@ jobs:
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
             -PallowDebugSignedRelease=true \
-            -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleStandardRelease
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleGplayDebug
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
-            -PallowDebugSignedRelease=true \
             -PallowDebugSignedRelease=true \
             -PskipShellTemplateSync=true \
             :app:assembleGplayRelease
@@ -136,6 +135,7 @@ jobs:
 
           ./gradlew --no-daemon --no-configuration-cache --max-workers=2 \
             -Dkotlin.compiler.execution.strategy=in-process \
+            -PallowDebugSignedRelease=true \
             :shell:assembleRelease
 
       # End-to-end proof that the export pipeline produces an installable APK: a real
