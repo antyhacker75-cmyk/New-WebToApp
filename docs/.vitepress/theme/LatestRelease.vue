@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { useData } from 'vitepress'
 
-const REPO = 'renz2451/web-to-app'
+const REPO = 'antyhacker75-cmyk/New-WebToApp'
 const RELEASES_PAGE = `https://github.com/${REPO}/releases`
 
 const { lang } = useData()
