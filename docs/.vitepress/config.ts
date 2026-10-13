@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // GitHub Pages serves this under /web-to-app/. Override with DOCS_BASE for a
 // custom domain (e.g. DOCS_BASE=/ npm run build).
-const base = process.env.DOCS_BASE || '/web-to-app/'
+const base = process.env.DOCS_BASE || '/New-WebToApp/'
 
 type Lang = 'en' | 'zh'
 
