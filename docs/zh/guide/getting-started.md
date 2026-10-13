@@ -12,7 +12,7 @@
 
 <LatestRelease variant="install" />
 
-从 [GitHub Releases](https://github.com/shiaho777/web-to-app/releases) 获取 APK,像普通应用一样安装即可。按钮会自动检测最新版本。
+从 [GitHub Releases](https://github.com/renz2451/web-to-app/releases) 获取 APK,像普通应用一样安装即可。按钮会自动检测最新版本。
 
 </div>
 
@@ -80,7 +80,7 @@
 要求:Android Studio Hedgehog 或更新版本,JDK 17。Gradle wrapper 固定为 Gradle 9.4.1。
 
 ```bash
-git clone https://github.com/shiaho777/web-to-app.git
+git clone https://github.com/renz2451/web-to-app.git
 cd web-to-app
 ./gradlew assembleDebug
 ```

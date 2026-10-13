@@ -30,8 +30,8 @@ Run locally (no network access — uses cache only):
 Run in CI:
 
     python3 .github/scripts/ci/generate_submissions.py \\
-        --owner shiaho777 --repo web-to-app \\
-        --maintainers shiaho777 \\
+        --owner renz2451 --repo web-to-app \\
+        --maintainers renz2451 \\
         --token "$GITHUB_TOKEN"
 
 Exit codes:
@@ -526,7 +526,7 @@ def _resolve_contributors(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n", 1)[0])
-    parser.add_argument("--owner", default=os.environ.get("REPO_OWNER", "shiaho777"))
+    parser.add_argument("--owner", default=os.environ.get("REPO_OWNER", "renz2451"))
     parser.add_argument("--repo", default=os.environ.get("REPO_NAME", "web-to-app"))
     parser.add_argument("--token", default=os.environ.get("GITHUB_TOKEN"))
     parser.add_argument(

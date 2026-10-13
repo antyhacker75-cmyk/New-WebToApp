@@ -497,14 +497,14 @@ function themeConfig(lang: Lang, prefix: string) {
       formatOptions: { dateStyle: 'medium' }
     },
     editLink: {
-      pattern: 'https://github.com/shiaho777/web-to-app/edit/main/docs/:path',
+      pattern: 'https://github.com/renz2451/web-to-app/edit/main/docs/:path',
       text: isZh ? '在 GitHub 上编辑此页' : 'Edit this page on GitHub'
     },
     footer: {
       message: isZh ? '以 Unlicense 发布。' : 'Released under the Unlicense.',
       copyright: isZh
-        ? 'Built by shiaho · <a href="https://shiaho777.github.io/web-to-app/zh/privacy">隐私权政策</a>'
-        : 'Built by shiaho · <a href="https://shiaho777.github.io/web-to-app/privacy">Privacy Policy</a>'
+        ? 'Built by renz · <a href="https://renz2451.github.io/web-to-app/zh/privacy">隐私权政策</a>'
+        : 'Built by renz · <a href="https://renz2451.github.io/web-to-app/privacy">Privacy Policy</a>'
     }
   }
 }
@@ -566,8 +566,8 @@ export default defineConfig({
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/shiaho777/web-to-app' },
-      { icon: 'x', link: 'https://x.com/shiaho777' }
+      { icon: 'github', link: 'https://github.com/renz2451/web-to-app' },
+      { icon: 'x', link: 'https://x.com/renz2451' }
     ]
   }
 })

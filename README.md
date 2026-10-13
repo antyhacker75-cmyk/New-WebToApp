@@ -11,32 +11,32 @@
 **English** · [简体中文](.github/docs/README_CN.md)
 
 <p align="center">
-  <a href="https://github.com/shiaho777/web-to-app/stargazers">
-    <img src="https://img.shields.io/github/stars/shiaho777/web-to-app?style=for-the-badge" alt="Stars">
+  <a href="https://github.com/renz2451/web-to-app/stargazers">
+    <img src="https://img.shields.io/github/stars/renz2451/web-to-app?style=for-the-badge" alt="Stars">
   </a>
-  <a href="https://github.com/shiaho777/web-to-app/network/members">
-    <img src="https://img.shields.io/github/forks/shiaho777/web-to-app?style=for-the-badge" alt="Forks">
+  <a href="https://github.com/renz2451/web-to-app/network/members">
+    <img src="https://img.shields.io/github/forks/renz2451/web-to-app?style=for-the-badge" alt="Forks">
   </a>
-  <a href="https://github.com/shiaho777/web-to-app/releases/latest">
-    <img src="https://img.shields.io/github/v/release/shiaho777/web-to-app" alt="Latest Version">
+  <a href="https://github.com/renz2451/web-to-app/releases/latest">
+    <img src="https://img.shields.io/github/v/release/renz2451/web-to-app" alt="Latest Version">
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-Unlicense-blue?style=for-the-badge" alt="License: Unlicense">
   </a>
-  <a href="https://github.com/shiaho777/web-to-app/releases">
+  <a href="https://github.com/renz2451/web-to-app/releases">
     <img src="https://img.shields.io/badge/Android-6.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android 6.0+">
   </a>
-  <a href="https://github.com/shiaho777/web-to-app/actions/workflows/android-ci.yml">
-    <img src="https://github.com/shiaho777/web-to-app/actions/workflows/android-ci.yml/badge.svg" alt="Android CI">
+  <a href="https://github.com/renz2451/web-to-app/actions/workflows/android-ci.yml">
+    <img src="https://github.com/renz2451/web-to-app/actions/workflows/android-ci.yml/badge.svg" alt="Android CI">
   </a>
-  <a href="https://shiaho777.github.io/web-to-app/">
+  <a href="https://renz2451.github.io/web-to-app/">
     <img src="https://img.shields.io/badge/docs-online-blue?style=for-the-badge" alt="Documentation">
   </a>
 </p>
 
 <p align="center">
   <a href="https://trendshift.io/repositories/22597?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-22597" target="_blank" rel="noopener noreferrer">
-    <img src="https://trendshift.io/api/badge/trendshift/repositories/22597/weekly?language=Kotlin" alt="shiaho777%2Fweb-to-app | Trendshift" width="250" height="55">
+    <img src="https://trendshift.io/api/badge/trendshift/repositories/22597/weekly?language=Kotlin" alt="renz2451%2Fweb-to-app | Trendshift" width="250" height="55">
   </a>
 </p>
 
@@ -139,13 +139,13 @@ Node.js, PHP, Python, Go, WordPress, image, and video stay in the app. Turn them
 
 From a fresh install to your first signed APK in about a minute:
 
-1. **Install the builder** — get the APK from [GitHub Releases](https://github.com/shiaho777/web-to-app/releases) onto a device running Android 6.0 (API 23) or newer.
+1. **Install the builder** — get the APK from [GitHub Releases](https://github.com/renz2451/web-to-app/releases) onto a device running Android 6.0 (API 23) or newer.
 2. **Create an app** — on **My Apps**, tap **Create**. The default grid is Web, Multi-Site, HTML, Offline Pack, Frontend, and Gallery. PHP, WordPress, Node.js, Python, Go, and Media appear after **About → Advanced features** is on.
 3. **Fill in the basics** — app name, target URL (or your project files), and an optional icon, then **Save**. Every other editor card is optional configuration.
 4. **Preview** — tap the app's card to run it in the same runtime code the export will use.
 5. **Build** — tap **⋮ → Build APK**, pick the engine and options, and get a signed APK ready to install or share. Shipping to Google Play? Use **⋮ → Google Play** instead — it builds the APK, converts it to a Play-ready signed AAB with `targetSdk` rewritten, and generates the Play metadata — all on-device.
 
-The full walkthrough — with the per-type notes and what happens under the hood — lives in the [Getting Started guide](https://shiaho777.github.io/web-to-app/guide/getting-started).
+The full walkthrough — with the per-type notes and what happens under the hood — lives in the [Getting Started guide](https://renz2451.github.io/web-to-app/guide/getting-started).
 
 ---
 
@@ -233,7 +233,7 @@ WebToApp has a large number of switches. The sections below group them by use ca
 
 - **Custom package name**, `versionName`, `versionCode`, icon, label, architecture target, and export format. A transparent icon gets a white adaptive plate by default, or a solid color you pick, or a transparent plate. An opaque icon keeps its edge color.
 - **Build-time permission injection** with unused permissions pruned from the template manifest.
-- **One-tap AAB export** — auto-builds the APK on demand, converts it to a Play-ready signed AAB with `targetSdk` rewritten to the Play-required level (currently 36) and protobuf metadata generated locally; cancellable mid-build. Available for every app type except the server-runtime ones and encrypted builds — see [which apps can be published](https://shiaho777.github.io/web-to-app/guide/more-features/google-play).
+- **One-tap AAB export** — auto-builds the APK on demand, converts it to a Play-ready signed AAB with `targetSdk` rewritten to the Play-required level (currently 36) and protobuf metadata generated locally; cancellable mid-build. Available for every app type except the server-runtime ones and encrypted builds — see [which apps can be published](https://renz2451.github.io/web-to-app/guide/more-features/google-play).
 - **Keystore management** — create, import, export, delete, and certificate-fingerprint viewing; PKCS12/PFX/JKS/BKS import including Android Studio upload-key cases where store and key passwords differ.
 - **Signature schemes** — V1, V2, V3 independently controlled, with auto-fallback for legacy certificates; custom V1 signer filename for `META-INF/<name>.SF` / `.RSA`.
 - **Performance options** — image compression, WebP conversion, code minification, lazy loading, DNS prefetch, and preload hints.
@@ -316,15 +316,15 @@ The community market carries only JS/CSS extension modules. **Browser extensions
 
 ## Documentation
 
-The official documentation site is published at **[shiaho777.github.io/web-to-app](https://shiaho777.github.io/web-to-app/)**, in English and 简体中文:
+The official documentation site is published at **[renz2451.github.io/web-to-app](https://renz2451.github.io/web-to-app/)**, in English and 简体中文:
 
 | Section | URL | Covers |
 | --- | --- | --- |
-| Guide | [/guide/introduction](https://shiaho777.github.io/web-to-app/guide/introduction) | Getting started, main screen, app types, per-app actions and common config, FAQ |
-| Developer | [/developer/](https://shiaho777.github.io/web-to-app/developer/) | Architecture, export pipeline, shell sync, config drift, i18n, change recipes |
-| Extensions | [/extensions/](https://shiaho777.github.io/web-to-app/extensions/) | JS/CSS modules, userscripts, Chrome MV3, API reference, publishing |
-| 简体中文 | [/zh/](https://shiaho777.github.io/web-to-app/zh/) | Full Chinese mirror of every page above |
-| Privacy | [/privacy](https://shiaho777.github.io/web-to-app/privacy) | Privacy policy for the builder app. Apps you build need their own |
+| Guide | [/guide/introduction](https://renz2451.github.io/web-to-app/guide/introduction) | Getting started, main screen, app types, per-app actions and common config, FAQ |
+| Developer | [/developer/](https://renz2451.github.io/web-to-app/developer/) | Architecture, export pipeline, shell sync, config drift, i18n, change recipes |
+| Extensions | [/extensions/](https://renz2451.github.io/web-to-app/extensions/) | JS/CSS modules, userscripts, Chrome MV3, API reference, publishing |
+| 简体中文 | [/zh/](https://renz2451.github.io/web-to-app/zh/) | Full Chinese mirror of every page above |
+| Privacy | [/privacy](https://renz2451.github.io/web-to-app/privacy) | Privacy policy for the builder app. Apps you build need their own |
 
 ## Architecture
 
@@ -373,7 +373,7 @@ See [app/build.gradle.kts](app/build.gradle.kts) for the complete dependency lis
 Requirements: Android Studio Hedgehog or newer, JDK 17. The Gradle wrapper pins Gradle 9.4.1.
 
 ```bash
-git clone https://github.com/shiaho777/web-to-app.git
+git clone https://github.com/renz2451/web-to-app.git
 cd web-to-app
 ./gradlew assembleDebug
 ```
@@ -397,7 +397,7 @@ For release builds, configure signing through `local.properties` and `app/build.
 | Lane | What you do | Guide |
 | --- | --- | --- |
 | `modules/` | Publish a community module to the in-app market | [modules/README.md](modules/README.md) |
-| Issues | Report a bug or request a feature | [GitHub Issues](https://github.com/shiaho777/web-to-app/issues) |
+| Issues | Report a bug or request a feature | [GitHub Issues](https://github.com/renz2451/web-to-app/issues) |
 | Code | Fix a bug or build a feature in the Android client | [CONTRIBUTING.md](.github/CONTRIBUTING.md) |
 | `AGENTS.md` | Authoritative guide for AI coding agents and deep contributors (architecture, shell sync, export pipeline, config drift, packaging constraints) | [AGENTS.md](AGENTS.md) |
 
@@ -407,9 +407,9 @@ Developed by **shiaho**.
 
 | Platform | Link |
 | --- | --- |
-| GitHub | [github.com/shiaho777/web-to-app](https://github.com/shiaho777/web-to-app) |
+| GitHub | [github.com/renz2451/web-to-app](https://github.com/renz2451/web-to-app) |
 | Telegram | [t.me/webtoapp777](https://t.me/webtoapp777) |
-| X (Twitter) | [@shiaho777](https://x.com/shiaho777) |
+| X (Twitter) | [@renz2451](https://x.com/renz2451) |
 | Bilibili | [b23.tv/8mGDo2N](https://b23.tv/8mGDo2N) |
 | QQ Group | 1041130206 |
 

@@ -4,7 +4,7 @@
 
 This policy describes the **WebToApp** Android app, the on-device builder published by **shiaho**. It covers the app you install from Google Play or from GitHub. It does not cover a website, server, or APK that you create with WebToApp. If you publish one of those, it needs its own privacy policy.
 
-Contact: [GitHub Issues](https://github.com/shiaho777/web-to-app/issues)
+Contact: [GitHub Issues](https://github.com/renz2451/web-to-app/issues)
 
 ## What we do not do
 
@@ -57,4 +57,4 @@ When this policy changes, the effective date at the top of this page changes wit
 
 ## Contact
 
-Questions about this policy: [github.com/shiaho777/web-to-app/issues](https://github.com/shiaho777/web-to-app/issues)
+Questions about this policy: [github.com/renz2451/web-to-app/issues](https://github.com/renz2451/web-to-app/issues)

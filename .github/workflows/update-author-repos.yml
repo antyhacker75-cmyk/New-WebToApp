@@ -22,7 +22,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh api 'users/shiaho777/repos?per_page=100&type=owner&sort=pushed' --paginate \
+          gh api 'users/renz2451/repos?per_page=100&type=owner&sort=pushed' --paginate \
             | jq '[.[] | select((.fork | not) and (.name | ascii_downcase) != "web-to-app")
                   | {name, description, stargazers_count, forks_count, language, pushed_at, html_url}]
                   | sort_by(-.stargazers_count)' > /tmp/repos.json

@@ -19,12 +19,12 @@ Instructions for coding agents working in this repository.
 | `clone-host/` | Host-side APK clone / identity reshape support library. Its DEX asset generation (`syncCloneHostDex`) is deliberately disabled (`enabled = false`, AV false-positive mitigation, e0d2d4d6) — `AppCloner` runs fail-soft without the asset. |
 | `modules/` | Module Market catalog (`registry.json` + per-module folders). |
 | `sample-bundles/` | Heavy sample dependency packs (`python-*-shared.zip` + sha256-pinned `manifest.json`) fetched on demand by `SampleSharedPackManager` — deliberately NOT in `app/assets` (saves ~30MB raw / ~7MB compressed from the host APK). Regenerate via `scripts/build_sample_bundles.py`. |
-| `docs/` | VitePress documentation site (guide / developer / extensions, EN + ZH), published to https://shiaho777.github.io/web-to-app/ by `.github/workflows/docs-deploy.yml`. Site URL paths map 1:1 to files under `docs/` (`/zh/...` → `docs/zh/...`). |
+| `docs/` | VitePress documentation site (guide / developer / extensions, EN + ZH), published to https://renz2451.github.io/web-to-app/ by `.github/workflows/docs-deploy.yml`. Site URL paths map 1:1 to files under `docs/` (`/zh/...` → `docs/zh/...`). |
 | `scripts/` | Build helpers and gates (`check_config_field_drift.py`). |
 
 Runtime Kotlin is authored under `app/` and synced into `shell` by `syncShellRuntimeSources`. Edit the `app/` source once; do not permanently fork copies under shell.
 
-User-facing product docs: `README.md`, `.github/docs/README_CN.md`, `.github/CONTRIBUTING.md`, `modules/README.md`. The published documentation site is https://shiaho777.github.io/web-to-app/ (source: `docs/`, deployed by `.github/workflows/docs-deploy.yml`).
+User-facing product docs: `README.md`, `.github/docs/README_CN.md`, `.github/CONTRIBUTING.md`, `modules/README.md`. The published documentation site is https://renz2451.github.io/web-to-app/ (source: `docs/`, deployed by `.github/workflows/docs-deploy.yml`).
 
 ## How the main pieces connect
 
@@ -96,7 +96,7 @@ Mental model:
 
 ### Delivery (Issue + PR + CI)
 
-Default target: [shiaho777/web-to-app](https://github.com/shiaho777/web-to-app). Prefer a pull request over direct pushes to `main` when delivering code. Human-facing wording of the same loop lives in [CONTRIBUTING.md](.github/CONTRIBUTING.md); keep those docs in sync when this process changes.
+Default target: [renz2451/web-to-app](https://github.com/renz2451/web-to-app). Prefer a pull request over direct pushes to `main` when delivering code. Human-facing wording of the same loop lives in [CONTRIBUTING.md](.github/CONTRIBUTING.md); keep those docs in sync when this process changes.
 
 **Language (required):** GitHub **Issues and PRs must be written in English** — titles, bodies, labels text you author, and delivery comments on the Issue/PR. Local chat with the user may be Chinese or any language; do not copy that language into Issue/PR text.
 
