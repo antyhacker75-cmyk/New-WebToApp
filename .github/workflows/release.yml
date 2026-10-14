@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Release tag (e.g. v1.0.0)'
+        description: 'Release tag (e.g. v2.7.9)'
         required: true
-        default: 'v1.0.0'
+        default: 'v2.7.9'
   push:
     tags:
       - 'v*'
@@ -48,3 +48,35 @@ jobs:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           files: app/build/outputs/apk/standard/release/*.apk
           generate_release_notes: true
+          body: |
+            ## What's Changed
+
+            ### Added
+            - Version history — browse and download any past release directly from the About screen
+            - In-app update checker — detects new releases and shows download progress with SHA-256 verification
+
+            ### Changed
+            - **Update source** — the release API now points at `antyhacker75-cmyk/New-WebToApp` instead of the upstream repo
+            - **Rebranding** — user-facing strings, contact links, and author references updated to Renz2451
+            - **GitHub card** — "Get in touch" now opens this repository
+
+            ### Fixed
+            - "Empty response from release API" when opening Version history
+            - Update checker returning no results after the rebrand
+
+            ---
+
+            ### 更新内容
+
+            ### 新增
+            - 版本历史 —— 在关于页面浏览和下载任何历史版本
+            - 应用内更新检查 —— 自动检测新版本并显示带 SHA-256 校验的下载进度
+
+            ### 调整
+            - **更新源** —— 发布 API 现指向 `antyhacker75-cmyk/New-WebToApp`
+            - **重新品牌化** —— 用户可见文案、联系方式与作者署名更新为 Renz2451
+            - **GitHub 卡片** —— "联系我们" 现在打开本仓库
+
+            ### 修复
+            - 打开版本历史时提示 "Empty response from release API"
+            - 品牌化后更新检查无返回结果
