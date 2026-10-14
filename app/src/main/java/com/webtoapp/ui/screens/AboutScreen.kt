@@ -714,7 +714,7 @@ private fun ContactGrid() {
                 icon = Icons.Outlined.Forum,
                 label = authorLabel,
                 value = "renz2451",
-                action = ContactAction.OpenUrl("https://github.com/renz2451")
+                action = ContactAction.OpenUrl("https://github.com/antyhacker75-cmyk")
             )
         )
     }
@@ -724,7 +724,7 @@ private fun ContactGrid() {
         headerStyle = WtaSectionHeaderStyle.Quiet
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(WtaSpacing.CardGap)) {
-            GitHubRepoCard(onClick = { context.openUrl("https://github.com/renz2451/web-to-app") })
+            GitHubRepoCard(onClick = { context.openUrl("https://github.com/antyhacker75-cmyk/New-WebToApp") })
             entries.chunked(2).forEach { pair ->
                 Row(horizontalArrangement = Arrangement.spacedBy(WtaSpacing.CardGap)) {
                     pair.forEach { entry ->
@@ -817,7 +817,7 @@ private fun GitHubRepoCard(onClick: () -> Unit) {
                 )
                 AnimatedVisibility(visible = LocalShowDescriptions.current) {
                     Text(
-                        text = "github.com/renz2451/web-to-app",
+                        text = "github.com/antyhacker75-cmyk/New-WebToApp",
                         style = MaterialTheme.typography.labelSmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         fontFamily = FontFamily.Monospace,
@@ -1894,7 +1894,7 @@ private fun OtherProjectsSection() {
                         modifier = Modifier
                             .fillMaxWidth()
                             .clip(RoundedCornerShape(WtaRadius.Control))
-                            .clickable { context.openUrl("https://github.com/renz2451?tab=repositories") }
+                            .clickable { context.openUrl("https://github.com/antyhacker75-cmyk?tab=repositories") }
                             .padding(vertical = 6.dp),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically

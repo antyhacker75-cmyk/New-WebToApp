@@ -19,8 +19,8 @@ object UpdateChecker {
 
     private const val TAG = "UpdateChecker"
 
-    private const val OWNER = "renz2451"
-    private const val REPO = "web-to-app"
+    private const val OWNER = "antyhacker75-cmyk"
+    private const val REPO = "New-WebToApp"
     private const val LATEST_RELEASE_API =
         "https://api.github.com/repos/$OWNER/$REPO/releases/latest"
     private const val ALL_RELEASES_API =
