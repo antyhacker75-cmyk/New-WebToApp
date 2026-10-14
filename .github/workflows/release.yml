@@ -40,7 +40,7 @@ jobs:
           echo "signing.keyPassword=${{ secrets.KEY_PASSWORD }}" >> local.properties
 
       - name: Build Release APK
-        run: ./gradlew assembleStandardRelease
+        run: ./gradlew assembleStandardRelease -PallowDebugSignedRelease=true
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
