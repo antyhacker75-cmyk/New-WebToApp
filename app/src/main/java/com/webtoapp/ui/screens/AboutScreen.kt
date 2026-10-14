@@ -704,11 +704,7 @@ private fun ContactGrid() {
                 icon = Icons.Outlined.Groups,
                 label = "Discord $groupWord",
                 value = "https://discord.gg/EQxHDJ6aC",
-                action = ContactAction.CopyText(
-                    label = "Discord Group",
-                    text = "https://discord.gg/EQxHDJ6aC",
-                    toast = qqCopied
-                )
+                action = ContactAction.OpenUrl("https://discord.gg/EQxHDJ6aC")
             ),
             ContactEntry(
                 icon = Icons.Outlined.Forum,
